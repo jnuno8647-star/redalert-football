@@ -1,0 +1,15 @@
+{
+  "id": "./",
+  "name": "RedAlert Football",
+  "short_name": "RedAlert",
+  "description": "Alertas de cartões vermelhos no futebol.",
+  "lang": "pt-PT",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101318",
+  "theme_color": "#101318",
+  "icons": [
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

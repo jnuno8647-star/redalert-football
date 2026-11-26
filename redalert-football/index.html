@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101318">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="RedAlert">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <title>RedAlert Football</title>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand"><div class="logo">🔴</div><div><h1>RedAlert</h1><p>FOOTBALL LIVE RADAR</p></div></div>
+      <span class="status"><i></i> PROTÓTIPO</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">O TEU RADAR DE EXPULSÕES</p>
+      <h2>Não percas<br><em>nenhum vermelho.</em></h2>
+      <p class="muted">Alertas de cartões vermelhos diretos e expulsões por segundo amarelo.</p>
+      <button id="notifyBtn" class="primary">Ativar notificações neste iPhone</button>
+      <p id="notifyStatus" class="hint">Para instalar: abre no Safari, toca em Partilhar e escolhe «Adicionar ao ecrã principal».</p>
+    </section>
+
+    <section class="stats">
+      <article><span>COMPETIÇÕES</span><strong>Global*</strong></article>
+      <article><span>ALERTAS</span><strong>Todos os vermelhos</strong></article>
+      <article><span>ESTADO</span><strong class="amber">Demonstração</strong></article>
+    </section>
+
+    <section class="section-head"><div><p class="eyebrow">PAINEL</p><h3>Últimos alertas</h3></div><span class="pill">DEMO</span></section>
+    <section id="alerts" class="alerts">
+      <div class="empty"><div class="empty-icon">🟥</div><strong>Ainda sem alertas</strong><p>Quando a ligação a uma fonte de dados estiver configurada, os cartões vermelhos aparecerão aqui.</p></div>
+    </section>
+
+    <section class="section-head"><div><p class="eyebrow">TESTE</p><h3>Experimentar alerta</h3></div></section>
+    <section class="test-card">
+      <p>Envia uma notificação de teste para confirmar a apresentação no dispositivo.</p>
+      <button id="testBtn" class="secondary">Enviar notificação de teste</button>
+    </section>
+
+    <footer><p>* «Global» significa todas as competições cobertas pela API escolhida — não garante cobertura de todos os jogos do mundo.</p><p>RedAlert Football · Protótipo pessoal</p></footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
